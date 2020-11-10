@@ -1,5 +1,5 @@
 import React from "react";
-import houseImg from "../imgs/pic-6.jpg";
+import houseImg from "../imgs/hero-img-1.jpg";
 import HomePageDescr from "../components/HomePageDescr";
 import Navbar from "../components/Navbar";
 

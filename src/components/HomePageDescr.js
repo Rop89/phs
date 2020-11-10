@@ -6,14 +6,14 @@ import Zoom from "react-reveal/Zoom";
 function HomePageDescr() {
   return (
     <div className="hp-descr-container">
-      <div className=" hp-descr grid grid-rows-3 grid-flow-col gap-4 mt-8 mx-8 ">
+      <div className=" hp-descr grid grid-rows-3 grid-flow-col mt-12 mx-8">
         <img
-          className="img-php col-span-2 md:row-span-3 object-cover w-full h-full"
+          className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600"
           src={housePic4}
           alt="What is Personal Home Shopper"
         />
         <Zoom left>
-          <h1 className="pt-6 text-2xl font-bold text-darkerGreen md:row-span-1 col-span-2">
+          <h1 className="mt-6 text-2xl font-bold text-darkerGreen col-span-2">
             What is the Personal House Shopper?
           </h1>
         </Zoom>
@@ -27,9 +27,9 @@ function HomePageDescr() {
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velitm
         </p>
       </div>
-      <div className=" hp-descr grid grid-rows-3 grid-flow-col gap-4 pl-8 pt-16 md:p-8 lg:p-8 xl:p-8">
+      <div className=" hp-descr grid grid-rows-3 grid-flow-col mt-8 mx-8 ">
         <img
-          className="img-php row-span-3 h-48 w-64 md:w-64"
+          className="pt-6 text-2xl font-bold text-darkerGreen md:row-span-1 col-span-2"
           src={housePic1}
           alt="What is Personal Home Shopper"
         />
