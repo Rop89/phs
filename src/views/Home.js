@@ -1,6 +1,7 @@
 import React from "react";
 import houseImg from "../imgs/hero-img-1.jpg";
 import HomePageDescr from "../components/HomePageDescr";
+import BottomNav from "../components/BottomNav";
 import Navbar from "../components/Navbar";
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
         </span>
       </div>
       <HomePageDescr />
+      <BottomNav />
     </div>
   );
 }
