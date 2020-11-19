@@ -6,7 +6,7 @@ import property1 from "../imgs/phs-property-1.jpg";
 import property2 from "../imgs/phs-property-2.jpg";
 import property3 from "../imgs/phs-property-3.jpg";
 import { css } from "@emotion/core";
-import ClipLoader from "react-spinners/ClipLoader";
+import PulseLoader from "react-spinners/PulseLoader";
 
 const properties = [
   {
@@ -52,9 +52,10 @@ const holidayLettings = [
 ];
 
 const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 class Properties extends React.Component {
@@ -63,25 +64,15 @@ class Properties extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({ loading: false });
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1000);
   }
 
   render() {
-    const { loading } = this.state;
-
-    if (loading) {
-      // if your component doesn't have to wait for async data, remove this block
-      return (
-        <ClipLoader
-          css={override}
-          size={150}
-          color={"#000000"}
-          loading={this.state.loading}
-        />
-      ); // render null when app is not ready
-    }
-
-    return (
+    return this.state.loading ? (
+      <PulseLoader css={override} size={20} color={"#000000"} />
+    ) : (
       <>
         <Navbar />
         <div className="phs-properties flex flex-col items-center mt-4 text-center">
