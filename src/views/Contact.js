@@ -1,4 +1,5 @@
 import React from 'react';
+import { CountryDropdown } from 'react-country-region-selector';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import Navbar from "../components/Navbar";
@@ -9,12 +10,16 @@ import houseImg from "../imgs/hero-img-1.jpg";
 class Contact extends React.Component {
   constructor(props) {
 	super(props);
-	this.state = { message: '', name: '', email: '', phone:'' };
+	this.state = { message: '', name: '', email: '', phone:'', subject:'', country:'' };
 	this.handleChange = this.handleChange.bind(this);
 	this.handleSubmit = this.handleSubmit.bind(this);
   }
+  selectCountry (val) {
+    this.setState({ country: val });
+  }
 
   render() {
+    const { country } = this.state;
 	return (
     <>
     <Navbar/>
@@ -22,10 +27,10 @@ class Contact extends React.Component {
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${houseImg})` }}
       ></div>
-      <div className="flex flex-col pb-16">
-     <h1 className="flex flex-col items-center pt-8">Get in touch with us</h1>
-     <form className="test-mailing flex flex-col pt-4">
-       <div className="flex flex-row">
+      <div className="phs-form-div-wrapper-hero flex flex-col pb-16">
+     <h1 className="phs-contact-us-title flex flex-col items-center text-2xl pt-8">Get in touch with us</h1>
+     <form className="phs-form-wrapper flex flex-col items-center pt-4">
+       <div className="phs-form-row-1 flex flex-row">
         <input
               name="name"
               type="text"
@@ -33,6 +38,7 @@ class Contact extends React.Component {
               placeholder="Your name*"
               required
               onChange  = { (event) => this.handleChange("name", event)}
+              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
             />
             <input
               name="email"
@@ -41,9 +47,10 @@ class Contact extends React.Component {
               placeholder="Email Address*"
               required
               onChange  = { (event) => this.handleChange("email", event)}
+              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
             />
         </div>
-        <div className="flex flex-row">
+        <div className="phs-form-row-2 flex flex-row">
         <input
               name="phone"
               type="number"
@@ -51,17 +58,26 @@ class Contact extends React.Component {
               placeholder="Phone number*"
               required
               onChange  = { (event) => this.handleChange("phone", event)}
+              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
             />
              <input
               name="subject"
               type="text"
-              value={this.state.phone}
+              value={this.state.subject}
               placeholder="Subject*"
               required
-              onChange  = { (event) => this.handleChange("phone", event)}
+              onChange  = { (event) => this.handleChange("subject", event)}
+              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
             />
             </div>
-        <div className="flex items-center">
+            <CountryDropdown
+            value={country}
+            onChange={(val) => this.selectCountry(val)}
+            style={{
+              color: '#858585',
+              fontSize: 16
+          }} />
+        <div className="phs-form-message flex items-center">
       	<textarea
         	id="test-mailing"
         	name="test-mailing"
@@ -69,11 +85,11 @@ class Contact extends React.Component {
           placeholder="Your Message*"
         	required
         	value={this.state.feedback}
-        	style={{}}
+          className="mt-6 w-screen h-64"
       	/>
         </div>
     	
-    	<input type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
+    	<input type="button" value="Submit" className="btn btn--submit rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 " onClick={this.handleSubmit} />
   	</form>
     </div>
     <BottomNav/>

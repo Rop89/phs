@@ -9,6 +9,7 @@ module.exports = {
     textColor: {
       green: "#8fa87c",
       darkerGreen: "#324214",
+      blackMild: "#575757",
       white: "#ffffff",
       danger: "#e3342f",
     },
