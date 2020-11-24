@@ -27,10 +27,10 @@ class Contact extends React.Component {
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${houseImg})` }}
       ></div>
-      <div className="phs-form-div-wrapper-hero flex flex-col pb-16">
+      <div className="phs-form-div-wrapper-hero flex flex-col pb-16 pl-2 pr-2">
      <h1 className="phs-contact-us-title flex flex-col items-center text-2xl pt-8">Get in touch with us</h1>
-     <form className="phs-form-wrapper flex flex-col items-center pt-4">
-       <div className="phs-form-row-1 flex flex-row">
+     <form className="phs-form-wrapper flex flex-col items-center text-sm">
+       <div className="phs-form-row-1 flex flex-row pt-4">
         <input
               name="name"
               type="text"
@@ -38,7 +38,7 @@ class Contact extends React.Component {
               placeholder="Your name*"
               required
               onChange  = { (event) => this.handleChange("name", event)}
-              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
+              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg mr-4 w-2/3 h-10"
             />
             <input
               name="email"
@@ -47,10 +47,10 @@ class Contact extends React.Component {
               placeholder="Email Address*"
               required
               onChange  = { (event) => this.handleChange("email", event)}
-              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
+              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg w-2/3 h-10"
             />
         </div>
-        <div className="phs-form-row-2 flex flex-row">
+        <div className="phs-form-row-2 flex flex-row pt-4">
         <input
               name="phone"
               type="number"
@@ -58,7 +58,7 @@ class Contact extends React.Component {
               placeholder="Phone number*"
               required
               onChange  = { (event) => this.handleChange("phone", event)}
-              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
+              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-2 mr-4 w-2/3 h-10"
             />
              <input
               name="subject"
@@ -67,16 +67,23 @@ class Contact extends React.Component {
               placeholder="Subject*"
               required
               onChange  = { (event) => this.handleChange("subject", event)}
-              className="rounded-lg hover:bg-white hover:shadow-lg hover:border-transparent p-2"
+              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent p-2 w-2/3 h-10"
             />
             </div>
+            <div className="phs-country-selector flex flex-row flex-1 pt-4 ">
             <CountryDropdown
             value={country}
             onChange={(val) => this.selectCountry(val)}
             style={{
-              color: '#858585',
-              fontSize: 16
+              color: '#9ca3af',
+              borderColor:'black',
+              fontSize: 14,
+              paddingTop: 10,
+              paddingBottom: 10,
+              paddingLeft: 5,
+              width: '100%',
           }} />
+          </div>
         <div className="phs-form-message flex items-center">
       	<textarea
         	id="test-mailing"
@@ -85,7 +92,7 @@ class Contact extends React.Component {
           placeholder="Your Message*"
         	required
         	value={this.state.feedback}
-          className="mt-6 w-screen h-64"
+          className=" pt-4 pl-2 mt-6 w-screen h-64 rounded-lg border-2 border-opacity-25 border-black"
       	/>
         </div>
     	
