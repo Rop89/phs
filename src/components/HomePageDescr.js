@@ -6,14 +6,14 @@ import Zoom from "react-reveal/Zoom";
 function HomePageDescr() {
   return (
     <div className="hp-descr-container">
-      <div className=" hp-descr grid grid-rows-3 grid-flow-col mt-12 mx-8">
+      <div className=" hp-descr grid grid-rows-3 grid-flow-col">
         <img
           className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600"
           src={housePic4}
           alt="What is Personal Home Shopper"
         />
         <Zoom left>
-          <h1 className="mt-6 text-2xl font-bold text-darkerGreen col-span-2">
+          <h1 className="text-2xl font-bold text-darkerGreen col-span-3">
             What is the Personal House Shopper?
           </h1>
         </Zoom>
@@ -27,18 +27,18 @@ function HomePageDescr() {
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velitm
         </p>
       </div>
-      <div className=" hp-descr grid grid-rows-3 grid-flow-col mt-8 mx-8 ">
+      <div className=" hp-descr grid grid-rows-3 grid-flow-col">
         <img
-          className="pt-6 text-2xl font-bold text-darkerGreen md:row-span-1 col-span-2"
+          className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600"
           src={housePic1}
           alt="What is Personal Home Shopper"
         />
         <Zoom left>
-          <h1 className="pt-6 text-2xl font-bold text-darkerGreen row-span-1 col-span-2">
+          <h1 className="text-2xl font-bold text-darkerGreen row-span-1 col-span-2">
             Where are we based?
           </h1>
         </Zoom>
-        <p className="row-span-2 col-span-2">
+        <p className="md:row-span-2 col-span-2">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta

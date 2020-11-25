@@ -58,7 +58,7 @@ class Contact extends React.Component {
               placeholder="Phone number*"
               required
               onChange  = { (event) => this.handleChange("phone", event)}
-              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-2 mr-4 w-2/3 h-10"
+              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg mr-4 w-2/3 h-10"
             />
              <input
               name="subject"
@@ -67,7 +67,7 @@ class Contact extends React.Component {
               placeholder="Subject*"
               required
               onChange  = { (event) => this.handleChange("subject", event)}
-              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent p-2 w-2/3 h-10"
+              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent w-2/3 h-10"
             />
             </div>
             <div className="phs-country-selector flex flex-row flex-1 pt-4 ">
@@ -76,12 +76,13 @@ class Contact extends React.Component {
             onChange={(val) => this.selectCountry(val)}
             style={{
               color: '#9ca3af',
+              borderRadius:'50px',
               borderColor:'black',
               fontSize: 14,
               paddingTop: 10,
               paddingBottom: 10,
               paddingLeft: 5,
-              width: '100%',
+              width: '100%'
           }} />
           </div>
         <div className="phs-form-message flex items-center">
@@ -92,7 +93,7 @@ class Contact extends React.Component {
           placeholder="Your Message*"
         	required
         	value={this.state.feedback}
-          className=" pt-4 pl-2 mt-6 w-screen h-64 rounded-lg border-2 border-opacity-25 border-black"
+          className=" pt-4 pl-2 mt-6 w-350px h-175px rounded-lg border-2 border-opacity-25 border-black"
       	/>
         </div>
     	
