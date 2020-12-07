@@ -22,12 +22,6 @@ export const SidebarData =[
         cName: 'nav-text'
     },
     {
-        title: 'Prices',
-        path: '/prices',
-        icon: <AiIcons.AiOutlinePoundCircle />,
-        cName: 'nav-text'
-    },
-    {
         title: 'Contact',
         path: '/contact',
         icon: <AiIcons.AiFillContacts />,

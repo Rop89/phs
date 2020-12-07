@@ -5,19 +5,19 @@ import Zoom from "react-reveal/Zoom";
 
 function HomePageDescr() {
   return (
-    <div className="hp-descr-container">
-      <div className=" hp-descr grid grid-rows-3 grid-flow-col">
+    <div className="hp-descr-container flex flex-col justify-center">
+      <div className="hp-descr grid-rows-3 grid-flow-col ">
         <img
-          className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600"
+          className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600 mt-10 "
           src={housePic4}
           alt="What is Personal Home Shopper"
         />
         <Zoom left>
-          <h1 className="text-2xl font-bold text-darkerGreen col-span-3">
+          <h1 className="text-2xl font-bold col-span-3 mt-10">
             What is the Personal House Shopper?
           </h1>
         </Zoom>
-        <p className="md:row-span-2 col-span-2">
+        <p className="md:row-span-2 col-span-2 mt-10">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -27,18 +27,18 @@ function HomePageDescr() {
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velitm
         </p>
       </div>
-      <div className=" hp-descr grid grid-rows-3 grid-flow-col">
+      <div className=" hp-descr grid-rows-3 grid-flow-col">
         <img
-          className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600"
+          className="img-php col-span-2 md:row-span-3 object-cover w-600 h-600 mt-10"
           src={housePic1}
           alt="What is Personal Home Shopper"
         />
         <Zoom left>
-          <h1 className="text-2xl font-bold text-darkerGreen row-span-1 col-span-2">
+          <h1 className="text-2xl font-bold row-span-1 col-span-2 mt-10">
             Where are we based?
           </h1>
         </Zoom>
-        <p className="md:row-span-2 col-span-2">
+        <p className="md:row-span-2 col-span-2 mt-10">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta

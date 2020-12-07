@@ -6,7 +6,6 @@ import Navbar from "../components/Navbar";
 import BottomNav from "../components/BottomNav";
 import houseImg from "../imgs/hero-img-1.jpg";
 
-
 class Contact extends React.Component {
   constructor(props) {
 	super(props);
@@ -26,8 +25,8 @@ class Contact extends React.Component {
     <div
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${houseImg})` }}
-      ></div>
-      <div className="phs-form-div-wrapper-hero flex flex-col pb-16 pl-2 pr-2">
+      ></div> 
+      <div className="phs-form-div-wrapper-hero bg-slightlyWhiter flex flex-col pb-16 pl-2 pr-2">
      <h1 className="phs-contact-us-title flex flex-col items-center text-2xl pt-8">Get in touch with us</h1>
      <form className="phs-form-wrapper flex flex-col items-center text-sm">
        <div className="phs-form-row-1 flex flex-row pt-4">
@@ -70,17 +69,15 @@ class Contact extends React.Component {
               className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent w-2/3 h-10"
             />
             </div>
-            <div className="phs-country-selector flex flex-row flex-1 pt-4 ">
+            <div className="phs-country-selector flex flex-row flex-1 mt-4 border-2 border-black ">
             <CountryDropdown
             value={country}
             onChange={(val) => this.selectCountry(val)}
+            classes='country-dropdown'
             style={{
               color: '#9ca3af',
               borderRadius:'50px',
-              borderColor:'black',
               fontSize: 14,
-              paddingTop: 10,
-              paddingBottom: 10,
               paddingLeft: 5,
               width: '100%'
           }} />
