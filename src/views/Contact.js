@@ -69,7 +69,7 @@ class Contact extends React.Component {
               className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent w-2/3 h-10"
             />
             </div>
-            <div className="phs-country-selector flex flex-row flex-1 mt-4 border-2 border-black ">
+            <div className="phs-country-selector flex flex-row flex-1 mt-4 border-2 bg-blackMild">
             <CountryDropdown
             value={country}
             onChange={(val) => this.selectCountry(val)}
@@ -79,6 +79,8 @@ class Contact extends React.Component {
               borderRadius:'50px',
               fontSize: 14,
               paddingLeft: 5,
+              paddingTop: 10,
+              paddingBottom:10,
               width: '100%'
           }} />
           </div>
@@ -94,7 +96,7 @@ class Contact extends React.Component {
       	/>
         </div>
     	
-    	<input type="button" value="Submit" className="btn btn--submit rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 " onClick={this.handleSubmit} />
+    	<input type="button" value="Submit" className="btn btn--submit rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-opacity-5 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 " onClick={this.handleSubmit} />
   	</form>
     </div>
     <BottomNav/>
