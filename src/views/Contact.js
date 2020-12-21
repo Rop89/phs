@@ -37,7 +37,7 @@ class Contact extends React.Component {
               placeholder="Your name*"
               required
               onChange  = { (event) => this.handleChange("name", event)}
-              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-4 w-screen "
+              className=" rounded-lg border-2 border-opacity-25 border-black p-4 w-350px "
             />
             <input
               name="email"
@@ -46,7 +46,7 @@ class Contact extends React.Component {
               placeholder="Email Address*"
               required
               onChange  = { (event) => this.handleChange("email", event)}
-              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-4 w-screen mt-6"
+              className=" rounded-lg border-2 border-opacity-25 border-black p-4 w-350px mt-6"
             />
         </div>
         <div className="phs-form-row-2 flex flex-col pt-4">
@@ -57,7 +57,7 @@ class Contact extends React.Component {
               placeholder="Phone number*"
               required
               onChange  = { (event) => this.handleChange("phone", event)}
-              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-4 w-screen"
+              className=" rounded-lg border-2 border-opacity-25 border-black p-4 w-350px"
             />
              <input
               name="subject"
@@ -66,7 +66,7 @@ class Contact extends React.Component {
               placeholder="Subject*"
               required
               onChange  = { (event) => this.handleChange("subject", event)}
-              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent mt-6 p-4 w-screen"
+              className=" rounded-lg border-2 border-opacity-25 border-black mt-6 p-4 w-350px"
             />
             </div>
             <div className="phs-country-selector flex flex-row flex-1 mt-4 border-2 bg-blackMild">
@@ -76,11 +76,12 @@ class Contact extends React.Component {
             classes='country-dropdown'
             style={{
               color: '#9ca3af',
+              border: '#9ca3af',
               borderRadius:'50px',
               fontSize: 14,
               paddingLeft: 5,
-              paddingTop: 10,
-              paddingBottom:10,
+              paddingTop: 15,
+              paddingBottom:15,
               width: '100%'
           }} />
           </div>
@@ -96,7 +97,7 @@ class Contact extends React.Component {
       	/>
         </div>
     	
-    	<input type="button" value="Submit" className="btn btn--submit rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-opacity-5 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 " onClick={this.handleSubmit} />
+    	<input type="button" value="Submit" className="btn btn--submit rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 " onClick={this.handleSubmit} />
   	</form>
     </div>
     <BottomNav/>
