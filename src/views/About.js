@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import BottomNav from "../components/BottomNav";
 import Zoom from "react-reveal/Zoom";
-import houseImg from "../imgs/hero-img-1.jpg";
+import houseImg from "../imgs/pic-12.jpg";
+import Fade from 'react-reveal/Fade';
 
 function About() {
   return (
@@ -13,25 +14,37 @@ function About() {
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${houseImg})` }}
       ></div>
-      <div className="phs-dna-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
+
+      <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
       <Zoom left>
           <h1 className="text-2xl font-bold col-span-3">
-            Our DNA
+            - VISION -
           </h1>
         </Zoom>
-      <p className="mt-6">There are a lot of companies that do what we do. But our DNA is special.We prime by authenticy and we use empathy to define
-        what the best house would like for you. We put ourselves in your shoes. Literally. We find the house that you wanted only 
-        you didn't need to spend 1000 hours thinking about it. We know what you need. 
-      </p>
+        <Fade delay={500}>
+      <p className ="flex flex-col text-center mt-6"> We help creating a world where home feels more like home and happiness feels more like happiness.</p>
+      </Fade>
       </div>
-      <div className="phs-dna-content-wrapper-2 mb-6 flex flex-col items-center ml-2 mr-2">
+      <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
       <Zoom left>
-          <h1 className="text-2xl font-bold col-span-3 ml-4 mt-10 ">
-            How can I get a personal home shopper service?
+          <h1 className="text-2xl font-bold col-span-3">
+           - MISSION -
           </h1>
         </Zoom>
-      <p className="mt-6">All you need to do is to contact us, telling us what would be your dream house. We will take care of the rest for you.
-      </p>
+        <Fade delay={500}>
+      <p className= "flex flex-col text-center mt-6">To create such world we start by finding the perfect house for YOU. We understand what defines you which help us understand what defines the perfect place to live for YOU. </p>
+      </Fade>
+      </div>
+      <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
+      <Zoom left>
+          <h1 className="text-2xl font-bold col-span-3">
+            - OUR DNA - 
+          </h1>
+        </Zoom>
+        <Fade delay={500}>
+      <p className= "flex flex-col text-center mt-6"> We excel by our knowledge in the market and knowledge about what defines someone's taste for a certain type of house. Many years
+      of experience with many different customers and personalised assistance allowed us to build the foundation knowledge we hold to help you finding the perfect home.  </p>
+      </Fade>
       </div>
     </div>
     <BottomNav/>

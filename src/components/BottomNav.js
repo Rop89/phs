@@ -25,12 +25,14 @@ function BottomNav() {
           />
         </div>
         </div>
-        <div className="phs-contact-details-wrapper flex flex-col  ">
+        <div className="phs-contact-details-wrapper flex flex-col text-center ">
           <span className="phs-phone pt-4">(+351) 91765334242 </span>
           <span className="phs-email pt-4">helena.profissional@gmail.com </span>
         </div>
         <div className="copyrights-wrapper flex flex-row items-center mt-12 ">
-        <div className="phs-copyright text-xs">© Copyright PHS 2020. All rights reserved.</div>
+        <div className="phs-copyright text-xs flex items-center ">
+          <span className="text-center">© Copyright PHS 2020. All rights reserved.</span>
+          </div>
         </div>
         <hr className=""></hr>
       
