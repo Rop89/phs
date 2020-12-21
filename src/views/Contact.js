@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import Navbar from "../components/Navbar";
 import BottomNav from "../components/BottomNav";
-import houseImg from "../imgs/hero-img-1.jpg";
+import contactUsPic from "../imgs/pic-14.jpg";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -24,12 +24,12 @@ class Contact extends React.Component {
     <Navbar/>
     <div
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
-        style={{ backgroundImage: `url(${houseImg})` }}
+        style={{ backgroundImage: `url(${contactUsPic})` }}
       ></div> 
       <div className="phs-form-div-wrapper-hero bg-slightlyWhiter flex flex-col pb-16 pl-2 pr-2">
      <h1 className="phs-contact-us-title flex flex-col items-center text-2xl pt-8">Get in touch with us</h1>
-     <form className="phs-form-wrapper flex flex-col items-center text-sm">
-       <div className="phs-form-row-1 flex flex-row pt-4">
+     <form className="phs-form-wrapper flex flex-col items-center text-sm ml-2 mr-2 pt-10">
+       <div className="phs-form-row-1 flex flex-col pt-4">
         <input
               name="name"
               type="text"
@@ -37,7 +37,7 @@ class Contact extends React.Component {
               placeholder="Your name*"
               required
               onChange  = { (event) => this.handleChange("name", event)}
-              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg mr-4 w-2/3 h-10"
+              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-4 w-screen "
             />
             <input
               name="email"
@@ -46,10 +46,10 @@ class Contact extends React.Component {
               placeholder="Email Address*"
               required
               onChange  = { (event) => this.handleChange("email", event)}
-              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg w-2/3 h-10"
+              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-4 w-screen mt-6"
             />
         </div>
-        <div className="phs-form-row-2 flex flex-row pt-4">
+        <div className="phs-form-row-2 flex flex-col pt-4">
         <input
               name="phone"
               type="number"
@@ -57,7 +57,7 @@ class Contact extends React.Component {
               placeholder="Phone number*"
               required
               onChange  = { (event) => this.handleChange("phone", event)}
-              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg mr-4 w-2/3 h-10"
+              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg p-4 w-screen"
             />
              <input
               name="subject"
@@ -66,7 +66,7 @@ class Contact extends React.Component {
               placeholder="Subject*"
               required
               onChange  = { (event) => this.handleChange("subject", event)}
-              className=" pl-2 rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent w-2/3 h-10"
+              className=" rounded-lg border-2 border-opacity-25 border-black hover:bg-white hover:shadow-lg hover:border-transparent mt-6 p-4 w-screen"
             />
             </div>
             <div className="phs-country-selector flex flex-row flex-1 mt-4 border-2 bg-blackMild">

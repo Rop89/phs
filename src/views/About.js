@@ -18,11 +18,12 @@ function About() {
       <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
       <Zoom left>
           <h1 className="text-2xl font-bold col-span-3">
-            - VISION -
+            - WHEN WE STARTED -
           </h1>
         </Zoom>
         <Fade delay={500}>
-      <p className ="flex flex-col text-center mt-6"> We help creating a world where home feels more like home and happiness feels more like happiness.</p>
+      <p className ="flex flex-col text-center mt-6"> In 2005, we started as a 1 person's business working for companies such as Era where we acquired a big customer portfolio. Through hard work and empathy we started
+      captivating more and more customers to come to us to advice and the portfolio by that time was too big to manage. This is how Personal Home Shopper started. </p>
       </Fade>
       </div>
       <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
@@ -32,7 +33,8 @@ function About() {
           </h1>
         </Zoom>
         <Fade delay={500}>
-      <p className= "flex flex-col text-center mt-6">To create such world we start by finding the perfect house for YOU. We understand what defines you which help us understand what defines the perfect place to live for YOU. </p>
+      <p className= "flex flex-col text-center mt-6">To create a world where home feels more like home we start by finding the perfect house for YOU. We understand what defines you as a person which help us understand
+       what defines the perfect place to live for YOU. </p>
       </Fade>
       </div>
       <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
