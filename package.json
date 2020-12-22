@@ -36,6 +36,7 @@
     "react-image-gallery": "^1.0.8",
     "react-leaflet": "^3.0.0",
     "react-reveal": "^1.2.2",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-spinners": "^0.9.0",

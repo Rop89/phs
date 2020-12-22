@@ -6,16 +6,18 @@ import Navbar from "../components/Navbar";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="phs-home">
       <Navbar />
       <div
-        className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
+        className="header-pic bg-center bg-cover bg-no-repeat h-64 md:h-400px md:w-1140px md:bg-fixed md:block md:ml-auto md:mr-auto "
         style={{ backgroundImage: `url(${houseImg})` }}
       >
-        <span className="phs-text text-white text-2xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">
-          Find the perfect house for you
-        </span>
-      </div>
+        <h1 className="phs-text text-white text-2xl sm:text-2xl md:text-6xl text-center font-bold md:pt-40">
+          We find the perfect house for you
+        </h1>
+        </div>
+ 
+  
       <HomePageDescr />
       <BottomNav />
     </div>
