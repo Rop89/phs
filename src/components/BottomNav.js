@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 function BottomNav() {
   return (
     <>
-    <hr className="mt-10"></hr>
+    <hr className="mt-10 md:w-1140px md:block md:ml-auto md:mr-auto"></hr>
     <div className="phs-hero-bottom-nav flex flex-col items-center ">
       <div className="phs-social-icons-wrapper pt-4">
           <SocialIcon
