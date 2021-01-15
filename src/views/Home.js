@@ -13,7 +13,7 @@ function Home() {
       <img
           className="logo h-10 w-10 mr-4 md:mr-10 "
           src={logo}
-          alt="What is Personal Home Shopper"
+          alt="PHS logo"
         />
         </div>
       <div

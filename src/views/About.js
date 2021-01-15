@@ -2,20 +2,20 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import BottomNav from "../components/BottomNav";
 import Zoom from "react-reveal/Zoom";
-import houseImg from "../imgs/pic-12.jpg";
+import houseImg from "../imgs/pic-9.jpg";
 import Fade from 'react-reveal/Fade';
 
 function About() {
   return (
     <>
     <Navbar/>
-    <div className="phs-about-wrapper-hero ">
+    <div className="phs-about-wrapper-hero md:w-1140px md:block md:ml-auto md:mr-auto ">
     <div
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${houseImg})` }}
       ></div>
 
-      <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2">
+      <div className="phs-mission-content-wrapper-1 mt-10 flex flex-col items-center ml-2 mr-2 ">
       <Zoom left>
           <h1 className="text-2xl font-bold col-span-3">
             - WHEN WE STARTED -

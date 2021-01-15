@@ -76,7 +76,7 @@ class Properties extends React.Component {
       <>
         <Navbar />
         <div
-        className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
+        className="header-pic flex items-center bg-center bg-cover bg-no-repeat md:w-1140px md:block md:ml-auto md:mr-auto h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${property1})` }}
       ></div>
         <div className="phs-properties flex flex-col items-center mt-4 text-center"> 

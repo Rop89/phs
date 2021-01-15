@@ -23,9 +23,10 @@ class Contact extends React.Component {
     <>
     <Navbar/>
     <div
-        className="header-pic flex items-center bg-center bg-cover bg-no-repeat h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
+        className="header-pic flex items-center bg-center bg-cover bg-no-repeat md:w-1140px md:block md:ml-auto md:mr-auto h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${contactUsPic})` }}
       ></div> 
+      
       <div className="phs-form-div-wrapper-hero bg-slightlyWhiter flex flex-col pb-16 pl-2 pr-2">
      <h1 className="phs-contact-us-title flex flex-col items-center text-2xl pt-8">Get in touch with us</h1>
      <form className="phs-form-wrapper flex flex-col items-center text-sm ml-2 mr-2 pt-10">
@@ -95,7 +96,7 @@ class Contact extends React.Component {
       	/>
         </div>
     	
-    	<input type="button" value="Submit" className="btn btn--submit rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 " onClick={this.handleSubmit} />
+    	<input type="button" value="Submit" className="btn btn--submit cursor-pointer rounded-lg w-2/3 mt-12 p-4 bg-blackMild hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 w-350px" onClick={this.handleSubmit} />
   	</form>
     </div>
     <BottomNav/>
