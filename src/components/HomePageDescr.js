@@ -66,7 +66,7 @@ function HomePageDescr (){
         <hr className="mt-10 md:block md:ml-auto md:mr-auto"></hr>
         <div className= "phs-services-icons-wrapper flex flex-col md:flex-row items-center justify-center mt-24 mb-24 w-600 h-600">
       <IconContext.Provider value={{ size: "100" }} >
-          <div className=" pl-4 pr-4 pt-6 pb-6 flex flex-col items-center justify-center transform hover:scale-110 cursor-pointer shadow-md mr-10 ml-10 w-64 h-64">
+          <div className=" pl-4 pr-4 pt-6 pb-6 flex flex-col items-center justify-center transform hover:scale-110 cursor-pointer shadow-md mr-10 ml-10 mt-10 w-64 h-64">
               <span className="mt-3" >We find the perfect house for you</span>
               <button className="bg-black text-white p-3 w-48 mt-6">Learn more</button>
           </div>
