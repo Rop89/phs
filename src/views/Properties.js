@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import BottomNav from "../components/BottomNav";
 import ImageGallery from "react-image-gallery";
+import logo from "../imgs/PHS.png";
 import property1 from "../imgs/phs-property-1.jpg";
 import property2 from "../imgs/phs-property-2.jpg";
 import property3 from "../imgs/phs-property-3.jpg";
@@ -74,7 +75,14 @@ class Properties extends React.Component {
       <PulseLoader css={override} size={20} color={"#000000"} />
     ) : (
       <>
-        <Navbar />
+        <div className= "navbar flex flex-row justify-between">
+      <Navbar />
+      <img
+          className="logo h-10 w-10 mr-4 md:mr-10 "
+          src={logo}
+          alt="PHS logo"
+        />
+        </div>
         <div
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat md:w-1140px md:block md:ml-auto md:mr-auto h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${property1})` }}

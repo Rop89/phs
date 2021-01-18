@@ -17,10 +17,10 @@ function Home() {
         />
         </div>
       <div
-        className="header-pic bg-center bg-cover bg-no-repeat h-64 mt-10 md:h-400px md:w-1140px md:bg-fixed md:block md:ml-auto md:mr-auto "
+        className="header-pic bg-center bg-cover bg-no-repeat h-64 w-screen mt-10 md:h-400px md:w-1140px md:bg-fixed md:block md:ml-auto md:mr-auto "
         style={{ backgroundImage: `url(${houseImg})` }}
       >
-        <h1 className="phs-text text-white text-base md:text-4xl text-center font-bold md:pt-40">
+        <h1 className="phs-text text-white text-base text-2xl md:text-4xl text-center font-bold pt-24 md:pt-40">
           We find the perfect house for you
         </h1>
         </div>

@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import Navbar from "../components/Navbar";
 import BottomNav from "../components/BottomNav";
+import logo from "../imgs/PHS.png";
 import contactUsPic from "../imgs/pic-14.jpg";
 
 class Contact extends React.Component {
@@ -21,7 +22,14 @@ class Contact extends React.Component {
     const { country } = this.state;
 	return (
     <>
-    <Navbar/>
+     <div className= "navbar flex flex-row justify-between">
+      <Navbar />
+      <img
+          className="logo h-10 w-10 mr-4 md:mr-10 "
+          src={logo}
+          alt="PHS logo"
+        />
+        </div>
     <div
         className="header-pic flex items-center bg-center bg-cover bg-no-repeat md:w-1140px md:block md:ml-auto md:mr-auto h-64 sm:h-64 md:h-64 lg:h-488px lg:bg-fixed "
         style={{ backgroundImage: `url(${contactUsPic})` }}
